@@ -18,7 +18,7 @@ choice = st.sidebar.radio("Choose a Tool:", ["Chatbot", "Image Generator"])
 # 3. CHATBOT INTERFACE
 # =====================================================================
 if choice == "Chatbot":
-    st.header("Chat with shivbu's AI Assistance")
+    st.header("Use shivbu's AI Assistance")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -86,7 +86,7 @@ if choice == "Chatbot":
 # 4. REAL IMAGE GENERATOR INTERFACE (NO-TOKEN SUPER FAST ENGINE)
 # =====================================================================
 elif choice == "Image Generator":
-    st.header("AI Image Generator")
+    st.header("Shivbu's AI Studio")
     st.write("Describe the image you want to create:")
     
     image_prompt = st.text_input("Enter image prompt:", placeholder="e.g., A beautiful nature view")
